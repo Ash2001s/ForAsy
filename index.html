@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>For someone special</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./style.css'>
+    <script src='./script.js'></script>
+</head>
+
+<body>
+    <div class="hero">
+        <video id="vid" src="./0325.mp4" plays-inline></video>
+        <div id="screen">
+        </div>
+        <button id="play"
+            onclick="document.getElementById('vid').play();document.getElementById('play').style.display ='none';setTimeout(function(){document.getElementById('screen').style.display ='none';},1000);setTimeout(function() {document.getElementById('note').style.display = 'block';}, 14000);">Click
+            me</button>
+        <button id="note" onclick="showNote()">note</button>
+        <div id="note-popup">
+            <div id="note-text">
+                <p>Dear Asy, congratulations for your graduation, you are a very hard working person and you deserve the best, I am glad that you finally graduated and hopefully you'll finally get the chance to persue your dream job and buy that cute car. <br>&nbsp&nbsp&nbspWith love : Ash 💗💗</p>
+                <button id="close-note" onclick="closeNote()">Close</button>
+            </div>
+        </div>
+
+
+
+        <script>
+           // show button after 5 seconds
+        </script>
+
+
+    </div>
+</body>
+
+</html>
